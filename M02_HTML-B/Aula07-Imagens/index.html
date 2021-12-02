@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Títula da aba do navegador -->
-    <title>Treinamento</title>
+    <title>M02-Aula 07: Imagens</title>
   </head>
   <!-- <body></body > o que vai aparecer dentro da página -->
   <body>
@@ -31,7 +31,7 @@
       eletrônica como Aldus PageMaker.
     </p>
 
-    <!-- ======================== FORMATAÇÃO ========================-->
+    <!-- ======================== FORMATAÇÃO ======================== -->
 
     <!-- Negrito -->
     <p>Esse é um <b>texto em negrito.</b></p>
@@ -62,12 +62,49 @@
     <!-- Deixar abaixo da linha de texto -->
     <!-- Para textos ciêntificos -->
     <p>Esse é um <sub>texto subscript</sub></p>
-    
-     <!-- Deixar acima da linha de texto -->
+
+    <!-- Deixar acima da linha de texto -->
     <!-- Para textos ciêntificos -->
     <p>Esse é um <sup>texto superscript</sup></p>
 
-
     <!-- As tags de formatação não quebrão a linha  -->
+
+    <!-- ========================== LINKS ========================== -->
+
+    <h1>Programador Br</h1>
+    <p>Nossa missão é ajudar você a programar</p>
+    <!-- Atributo href: H(ypertext) Ref(erence)] (Referência para Hipertexto) -->
+    <a href="/M02_HTML-B/Aula05-Formatacao/index.html">Sobre Formatação</a>
+
+    <!-- ========================== IMAGEM ==========================-->
+
+    <!-- Atributo src: "source" [fonte] | Atributo alt: "alternate" -->
+    <!-- O ALT ele é importante tanto para o mecanismo de busca do Google saber o que é a imagem como também inclusão -->
+    <img
+      src="https://img.cybercook.com.br/imagens/receitas/155/sorvete-de-morango-840x480.jpeg?q=75"
+      alt="sorverte de morango" width = 1000
+    />
+
+    <img
+      src="/M02_HTML-B/Aula07-Imagens/sorverte.jpg"
+      alt="sorvete de chocolate" width = 1000
+    />
+
+    <!-- Link que carrega na mesma aba -->
+
+    <a
+      href=https://www.receitasnestle.com.br/receitas/sorvete-de-flocos
+    >
+      <img src="https://images.aws.nestle.recipes/resized/0dc621429be4041e60fc0ad015fa68b6_sorvete-flocos-receitas-nestle_768_384.jpg" alt="sorverte de flocos" width = 1000 />
+    </a>
+
+    <!-- Link que redirecina em uma outra aba -->
+
+    <a 
+      href="https://www.receitasnestle.com.br/receitas/sorvete-de-flocos" target="_blank"
+    >      
+      <img src="https://images.aws.nestle.recipes/resized/0dc621429be4041e60fc0ad015fa68b6_sorvete-flocos-receitas-nestle_768_384.jpg" alt="sorverte de flocos" width = 1000 /> 
+    </a>
+
   </body>
 </html>
