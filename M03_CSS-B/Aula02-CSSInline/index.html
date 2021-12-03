@@ -1,0 +1,165 @@
+<!-- Use CTRL '!' para criar a estrutura básica inicial-->
+<!-- <!DOCTYPE html> respresenta a versão do HTML5  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- <head></head> tudo que configura a página e não vai aparecer diretemente  -->
+  <head>
+    <!-- Codificação para mostra qual codificação que o arquivo atual foi gravado/está usadando. Usando atributo: charset="UTF-8" -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Títula da aba do navegador -->
+    <title>M02-Aula 10: Tabelas</title>
+  </head>
+  <!-- <body></body > o que vai aparecer dentro da página -->
+  <body>
+    <!-- Títulos usamos o <hN°></hN°> vai de 1 até 6 -->
+    <!-- <h1></h1> Título mais importante da página. Boas práticas: somente um <h1></h1> por página, Escalando de cima (h1) para baixo (h6) -->
+    <h1>Título 1</h1>
+    <h2>Sub-título 2</h2>
+
+    <!-- O HTML não se importa com a organização -->
+    
+    <!-- ========================= CSS Inline ======================== -->
+    <!-- CSS Inline-->
+    <p style="color: red">
+      Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+      e de impressos, e vem sendo utilizado desde o século XVI, quando um
+      impressor desconhecido pegou uma bandeja de tipos e os embaralhou para
+      fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco
+      séculos, como também ao salto para a editoração eletrônica, permanecendo
+      essencialmente inalterado. Se popularizou na década de 60, quando a
+      Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais
+      recentemente quando passou a ser integrado a softwares de editoração
+      eletrônica como Aldus PageMaker.
+    </p>
+
+    <!-- ======================== FORMATAÇÃO ======================== -->
+
+    <!-- Negrito -->
+    <p>Esse é um <b>texto em negrito.</b></p>
+    <!-- A tag <strong> é semática: sinaliza para mecanismos de busca que o texto entre a tag é mais importante que as demais. PADRÃO -->
+    <p>Esse é um <strong>texto em negrito.</strong></p>
+
+    <!-- Itálico -->
+    <p>Esse é um <i>texto em itálico.</i></p>
+    <!-- A tag <em> é semática: sinaliza para mecanismos de busca que o texto entre a tag é mais importante que as demais. PADRÃO -->
+    <p>Esse é um <em>texto em itálico.</em></p>
+
+    <!-- Marcação -->
+    <p>Esse é um <mark>texto com marcação.</mark></p>
+
+    <!-- Small: diminui-->
+    <p>Esse é um <small>texto com a tag smalls.</small></p>
+
+    <!-- Del: riscado-->
+    <!-- A tag <del> é semática: sinaliza para mecanismos de busca que o texto entre a tag é mais importante que as demais. PADRÃO -->
+    <p>Esse é um <del>texto removido</del> e substituido por esse.</p>
+    <p>Esse é um <s>texto removido</s> e substituido por esse.</p>
+
+    <!-- Ins -->
+    <!-- A tag <ins> é semática: sinaliza para mecanismos de busca que o texto entre a tag é mais importante que as demais. PADRÃO -->
+    <p>Esse é um <ins>texto inserido</ins></p>
+    <p>Esse é um <u>texto inserido</u></p>
+
+    <!-- Deixar abaixo da linha de texto -->
+    <!-- Para textos ciêntificos -->
+    <p>Esse é um <sub>texto subscript</sub></p>
+
+    <!-- Deixar acima da linha de texto -->
+    <!-- Para textos ciêntificos -->
+    <p>Esse é um <sup>texto superscript</sup></p>
+
+    <!-- As tags de formatação não quebrão a linha  -->
+
+    <!-- ========================== LINKS ========================== -->
+
+    <h1>Programador Br</h1>
+    <p>Nossa missão é ajudar você a programar</p>
+    <!-- Atributo href: H(ypertext) Ref(erence)] (Referência para Hipertexto) -->
+    <a href="/M02_HTML-B/Aula05-Formatacao/index.html">Sobre Formatação</a><br>
+
+    <!-- ========================== IMAGEM ========================== -->
+    <!-- ===================== Quebra de linha ====================== -->
+    <!-- Usamos o <br> 
+
+    <!-- Atributo src: "source" [fonte] | Atributo alt: "alternate" -->
+    <!-- O ALT ele é importante tanto para o mecanismo de busca do Google saber o que é a imagem como também inclusão -->
+
+    <img
+      src="https://img.cybercook.com.br/imagens/receitas/155/sorvete-de-morango-840x480.jpeg?q=75"
+      alt="sorverte de morango" width = 400
+    /><br><br><br>
+
+    <img
+      src="/M02_HTML-B/Aula07-Imagens/sorverte.jpg"
+      alt="sorvete de chocolate" width = 400
+    /><br>
+    <br>
+
+    <!-- Link que carrega na mesma aba -->
+
+    <a
+      href=https://www.receitasnestle.com.br/receitas/sorvete-de-flocos
+    >
+      <img src="https://images.aws.nestle.recipes/resized/0dc621429be4041e60fc0ad015fa68b6_sorvete-flocos-receitas-nestle_768_384.jpg" alt="sorverte de flocos" width = 400 />
+    </a><br>
+
+    <!-- Link que redirecina em uma outra aba -->
+
+    <a 
+      href="https://www.receitasnestle.com.br/receitas/sorvete-de-flocos" target="_blank"
+    >      
+      <img src="https://images.aws.nestle.recipes/resized/0dc621429be4041e60fc0ad015fa68b6_sorvete-flocos-receitas-nestle_768_384.jpg" alt="sorverte de flocos" width = 400 /> 
+    </a><br>
+
+    <!-- ========================== Lista ========================== -->
+
+    <!-- Lista não ordenda -->
+    <!-- Usamos o <ul></ul> -->
+
+    <h2>Lista de Compras</h2>
+    <ul>
+      <li>Arroz</li>
+      <li>Feijão</li>
+      <li>Suco de Laranja</li>
+    </ul><br>
+
+    <!-- Lista ordenda -->
+
+    <h2>Ranking dos melhores vendedores</h2>
+    <ol>
+      <li>Marcela</li>
+      <li>Carlos</li>
+      <li>João</li>
+    </ol>
+
+    <!-- ========================== Tabela ========================== -->
+
+    <!-- 1°) <table></table> -->
+    <!-- 2°) <tr> Table Row: linha da tabela -->
+    <!-- 3°) <th> Table Heade: Cabeçalho da tabela-->
+    <!-- 4°) <td> Table Data: Dados da tabela-->
+
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Igor</td>
+        <td>(00)00000-0000</td>
+        <td>igor@hotmail.com </td>
+      </tr>
+      <tr>
+        <td>Marcela</td>
+        <td>(11)11111-0000</td>
+        <td>mrc@hotmail.com </td>
+      </tr>
+    </table>
+    <!-- Para liberar espaço entre a tabele e o rodape da página -->
+    <br><br><br><br><br><br><br><br>
+
+  </body>
+</html>
