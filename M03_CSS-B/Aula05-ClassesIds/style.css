@@ -1,0 +1,24 @@
+/* "#" é um indentificador para id */
+
+#principal {
+    color: red;
+}
+
+#titulo {
+    color: green
+}
+
+/* "." é um indentificador para class */
+
+.texto_verde {
+    color: green;
+}
+
+/* 
+
+A diferença de classe para ID é que a Classe pode ser usada em mais de um elemento  
+
+id= identidade, unico, sem igual
+class= conjunto, grupo, varios
+
+*/

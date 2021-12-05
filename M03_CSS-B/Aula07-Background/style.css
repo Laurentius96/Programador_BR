@@ -1,0 +1,101 @@
+
+#principal {
+    color: rgb(255, 28, 255);
+    /* Se for pegar na internet basta colocar o linh dentro dos parenteses */
+    background-image: url(../Aula07-Background/imagem_exemplo.jpg);
+    /* A imagem vai rolando  */
+    background-attachment: fixed; 
+}
+
+.exemplo {
+    color: #ffff00;
+    background: blueviolet;
+}
+
+#titulo {
+    color: dodgerblue
+}
+
+
+.texto_verde {
+    color: rgba(2, 255, 100, 0.2);
+}
+
+/* 
+link:https://www.w3schools.com/css/css_background.asp
+
+background-color - (Cor de fundo)
+background-image - (Imagem de fundo)
+background-repeat
+background-attachment
+background-position
+background (shorthand property)
+
+OBS: Por padrão, a imagem é repetida para que cubra todo o elemento.
+
+----
+CSS Background Image Repeat ou (Repetição de fundo CSS):
+
+* Por padrão, a propriedade repete uma imagem horizontal e verticalmente.background-image
+
+* Algumas imagens devem ser repetidas apenas horizontal ou verticalmente, ou elas ficarão estranhas, 
+
+Se a imagem acima for repetida apenas horizontalmente
+=> background-repeat: repeat-x; (repete em x);
+
+Mostrar a imagem de fundo apenas uma vez também é especificado pela propriedade
+=> background-repeat: no-repeat; (não repete a imagem);
+
+----
+CSS background-position ou (Posição de fundo CSS):
+
+*A propriedade é usada para especificar a posição da imagem de fundo
+
+Posicione a imagem de fundo no canto superior direito:
+=>  background-position: right top;
+
+----
+CSS Background Attachment ou (Anexo de fundo CSS):
+
+*A propriedade especifica se a imagem de fundo deve rolar ou ser corrigida (não irá rolar com o resto da página)
+
+Especifique que a imagem de fundo deve ser corrigida:
+=> background-attachment: fixed;
+
+Especifique que a imagem de fundo deve rolar com o resto da página:
+=>  background-attachment: scroll
+
+---
+CSS Background Shorthand ou (Taquigrafia de fundo CSS):
+
+*Para encurtar o código, também é possível especificar todas as propriedades de fundo em uma única propriedade. 
+
+Exemplo Sem Taquigrafia:
+
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+
+Exemplo Com Taquigrafia:
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+*Ao usar a propriedade taquigrafia, a ordem dos valores da propriedade é:
+
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+    
+Não importa se um dos valores da propriedade está faltando, desde que 
+os outros estejam nesta ordem. Observe que não usamos a propriedade de anexo de fundo nos exemplos acima, pois ela não tem um valor.
+
+
+*/

@@ -1,0 +1,20 @@
+/* Números altos no RGB vão deixar a cor mais clara ( vai de 0 até 255) */
+#principal {
+    color: rgb(255, 28, 255);
+}
+
+/* RGB mas em hexadecimal os dois 1°(R) os dois do meio(G) os dois últimos(B)  */
+.exemplo {
+    color: #ffff00;
+}
+
+/* É possivel encontrar o nome de certas tonalides de cores */
+#titulo {
+    color: dodgerblue
+}
+
+/* No RGBA o 4° número se refere ao Alfa e determina a transparência do texto/objeto ele vai de 0 até 1( 0 é mais transparente)*/
+.texto_verde {
+    color: rgba(2, 255, 100, 0.2);
+}
+
