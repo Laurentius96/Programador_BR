@@ -1,0 +1,29 @@
+#paragrafos {
+    background-image: url(../Aula07-Background/imagem_exemplo.jpg);
+    /* A imagem vai rolando  */
+    background-attachment: fixed;
+}
+
+.exemplo {
+    color: #ffff00;
+    background: blueviolet;
+}
+
+#titulo {
+    color: dodgerblue
+}
+
+
+.texto_verde {
+    color: rgba(2, 255, 100, 0.2);
+}
+
+#principal {
+    color: white;
+}
+
+.subDiv {
+    color: rgb(161, 130, 26);
+    background: #ffff00;
+
+}

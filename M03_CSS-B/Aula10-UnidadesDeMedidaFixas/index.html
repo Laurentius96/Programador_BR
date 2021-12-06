@@ -1,0 +1,72 @@
+<!-- Use CTRL '!' para criar a estrutura básica inicial-->
+<!-- <!DOCTYPE html> respresenta a versão do HTML5  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- <head></head> tudo que configura a página e não vai aparecer diretemente  -->
+  <head>
+    <!-- Codificação para mostra qual codificação que o arquivo atual foi gravado/está usadando. Usando atributo: charset="UTF-8" -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /
+    >
+    <link href="style.css" rel="stylesheet">
+    <!-- Títula da aba do navegador -->
+    <title>M03-Aula 10: Unidades de medida</title>
+  </head>
+  <!-- <body></body > o que vai aparecer dentro da página -->
+  <body>
+    <!-- Não esquecer de udar o identificador # -->
+    <a href="#sorverte_de_flocos">Soverte de flocos</a><br>
+    <a href="#sorverte_de_morango">Soverte de Morango</a>
+
+    <h1 id = "titulo">Título 1</h1>
+    <h2>Sub-título 2</h2>
+ 
+    <!-- ======================== Medidas ======================== -->
+
+    <div id="cm"></div>
+    <div id="mm"></div>
+    <div id="in"></div>
+    <div id="px"></div>
+    <div id="pt"></div>
+    <div id="pc"></div>
+
+    <br><br><br>
+    <!-- ======================== IMAGEM ======================== -->
+    <img
+      id="sorverte_de_morango" src="https://img.cybercook.com.br/imagens/receitas/155/sorvete-de-morango-840x480.jpeg?q=75"
+      alt="sorverte de morango" width = 400
+    /><br><br><br>
+
+    <img
+      src="/M02_HTML-B/Aula07-Imagens/sorverte.jpg"
+      alt="sorvete de chocolate" width = 400
+    /><br>
+    <br>
+
+    <!-- Link que carrega na mesma aba -->
+
+    <a
+      href=https://www.receitasnestle.com.br/receitas/sorvete-de-flocos
+    >
+      <img src="https://images.aws.nestle.recipes/resized/0dc621429be4041e60fc0ad015fa68b6_sorvete-flocos-receitas-nestle_768_384.jpg" alt="sorverte de flocos" width = 400 />
+    </a><br>
+
+    <!-- Link que redirecina em uma outra aba -->
+
+    <a 
+      href="https://www.receitasnestle.com.br/receitas/sorvete-de-flocos" target="_blank"
+    >      
+      <img id= "sorverte_de_flocos" src="https://images.aws.nestle.recipes/resized/0dc621429be4041e60fc0ad015fa68b6_sorvete-flocos-receitas-nestle_768_384.jpg" alt="sorverte de flocos" width = 400 /> 
+    </a><br>
+
+
+
+
+
+
+    <!-- Para liberar espaço entre a tabele e o rodape da página -->
+    <br><br><br><br><br><br><br><br>
+
+  </body>
+</html>

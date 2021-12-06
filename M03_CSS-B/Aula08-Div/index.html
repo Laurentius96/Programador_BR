@@ -11,13 +11,18 @@
     >
     <link href="style.css" rel="stylesheet">
     <!-- Títula da aba do navegador -->
-    <title>M03-Aula 04: CSS Externo</title>
+    <title>M03-Aula 08: Div</title>
   </head>
   <!-- <body></body > o que vai aparecer dentro da página -->
   <body>
     <!-- Títulos usamos o <hN°></hN°> vai de 1 até 6 -->
     <!-- <h1></h1> Título mais importante da página. Boas práticas: somente um <h1></h1> por página, Escalando de cima (h1) para baixo (h6) -->
-    <h1>Título 1</h1>
+
+    <!-- Não esquecer de udar o identificador # -->
+    <a href="#sorverte_de_flocos">Soverte de flocos</a><br>
+    <a href="#sorverte_de_morango">Soverte de Morango</a>
+
+    <h1 id = "titulo">Título 1</h1>
     <h2>Sub-título 2</h2>
 
     <!-- O HTML não se importa com a organização -->
@@ -25,7 +30,8 @@
     <!-- ========================= CSS Inline ======================== -->
     <!-- CSS: Cascading Style Sheets OU Folhas de Estilo em Cascatas. -->
     <!-- CSS Inline-->
-    <p style="color: red">
+    <div id= "paragrafos">
+    <p id = "principal">
       Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
       e de impressos, e vem sendo utilizado desde o século XVI, quando um
       impressor desconhecido pegou uma bandeja de tipos e os embaralhou para
@@ -40,12 +46,12 @@
     <!-- ======================== FORMATAÇÃO ======================== -->
 
     <!-- Negrito -->
-    <p>Esse é um <b>texto em negrito.</b></p>
+    <p class="texto_verde">Esse é um <b>texto em negrito.</b></p>
     <!-- A tag <strong> é semática: sinaliza para mecanismos de busca que o texto entre a tag é mais importante que as demais. PADRÃO -->
-    <p>Esse é um <strong>texto em negrito.</strong></p>
+    <p class="texto_verde">Esse é um <strong>texto em negrito.</strong></p>
 
     <!-- Itálico -->
-    <p>Esse é um <i>texto em itálico.</i></p>
+    <p class="texto_verde">Esse é um <i>texto em itálico.</i></p>
     <!-- A tag <em> é semática: sinaliza para mecanismos de busca que o texto entre a tag é mais importante que as demais. PADRÃO -->
     <p>Esse é um <em>texto em itálico.</em></p>
 
@@ -57,24 +63,26 @@
 
     <!-- Del: riscado-->
     <!-- A tag <del> é semática: sinaliza para mecanismos de busca que o texto entre a tag é mais importante que as demais. PADRÃO -->
-    <p>Esse é um <del>texto removido</del> e substituido por esse.</p>
-    <p>Esse é um <s>texto removido</s> e substituido por esse.</p>
+      <div class="subDiv">
+        <p class="exemplo">Esse é um <del>texto removido</del> e substituido por esse.</p>
+        <p>Esse é um <s>texto removido</s> e substituido por esse.</p>
 
-    <!-- Ins -->
-    <!-- A tag <ins> é semática: sinaliza para mecanismos de busca que o texto entre a tag é mais importante que as demais. PADRÃO -->
-    <p>Esse é um <ins>texto inserido</ins></p>
-    <p>Esse é um <u>texto inserido</u></p>
+        <!-- Ins -->
+        <!-- A tag <ins> é semática: sinaliza para mecanismos de busca que o texto entre a tag é mais importante que as demais. PADRÃO -->
+        <p class="exemplo">Esse é um <ins>texto inserido</ins></p>
+        <p class="exemplo">Esse é um <u>texto inserido</u></p>
 
-    <!-- Deixar abaixo da linha de texto -->
-    <!-- Para textos ciêntificos -->
-    <p>Esse é um <sub>texto subscript</sub></p>
-
-    <!-- Deixar acima da linha de texto -->
-    <!-- Para textos ciêntificos -->
-    <p>Esse é um <sup>texto superscript</sup></p>
-
+        <!-- Deixar abaixo da linha de texto -->
+        <!-- Para textos ciêntificos -->
+        <p>Esse é um <sub>texto subscript</sub></p>
+          
+        <!-- Deixar acima da linha de texto -->
+        <!-- Para textos ciêntificos -->
+        <p>Esse é um <sup>texto superscript</sup></p>
+      </div>
+  </div>
     <!-- As tags de formatação não quebrão a linha  -->
-
+    
     <!-- ========================== LINKS ========================== -->
 
     <h1>Programador Br</h1>
@@ -90,7 +98,7 @@
     <!-- O ALT ele é importante tanto para o mecanismo de busca do Google saber o que é a imagem como também inclusão -->
 
     <img
-      src="https://img.cybercook.com.br/imagens/receitas/155/sorvete-de-morango-840x480.jpeg?q=75"
+      id="sorverte_de_morango" src="https://img.cybercook.com.br/imagens/receitas/155/sorvete-de-morango-840x480.jpeg?q=75"
       alt="sorverte de morango" width = 400
     /><br><br><br>
 
@@ -113,7 +121,7 @@
     <a 
       href="https://www.receitasnestle.com.br/receitas/sorvete-de-flocos" target="_blank"
     >      
-      <img src="https://images.aws.nestle.recipes/resized/0dc621429be4041e60fc0ad015fa68b6_sorvete-flocos-receitas-nestle_768_384.jpg" alt="sorverte de flocos" width = 400 /> 
+      <img id= "sorverte_de_flocos" src="https://images.aws.nestle.recipes/resized/0dc621429be4041e60fc0ad015fa68b6_sorvete-flocos-receitas-nestle_768_384.jpg" alt="sorverte de flocos" width = 400 /> 
     </a><br>
 
     <!-- ========================== Lista ========================== -->

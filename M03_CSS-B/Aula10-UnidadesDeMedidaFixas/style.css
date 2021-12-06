@@ -1,0 +1,50 @@
+#cm {
+    background-color: blue;
+    width: 1cm;
+    height: 1cm;
+}
+
+#mm {
+    background-color: red;
+    width: 1mm;
+    height: 1mm;
+}
+
+#in {
+    background-color: blue;
+    width: 1in;
+    height: 1in;
+}
+
+#px {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+#pt {
+    background-color: blue;
+    width: 10pt;
+    height: 10pt;
+}
+
+#pc {
+    background-color: red;
+    width: 1pc;
+    height: 1pc;
+}
+
+/* 
+Unidades de medidas fixas são propriedades CSS que podem assumir valores de "comprimento". Comprimento é um número seguido por uma unidade de medida, tais como 10px, 2em, etc. podem ser editadas com id, class. sendo:
+
+cm= centimetros
+mm= milimetros
+in= polegadas (1in = 96px = 2.54cm)
+px= pixels (1px = 1/96th de 1in) pode variar de acordo com a tela
+pt= pontos (1pt = 1/72 de 1in)
+pc= picas (1pc = 12 pt)
+
+As unidades de medidas fixas são expressas exatamente com o tamanho selecionado.
+*o que pode afetar a reprodução do site em telas de resolução diferentes.
+
+*/
