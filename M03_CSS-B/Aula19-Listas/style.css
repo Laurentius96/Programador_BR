@@ -1,0 +1,57 @@
+/* w3schools -https://www.w3schools.com/css/css_list.asp  */
+
+/*        
+
+Os três elementos masi comuns da lista não ordenada são:
+
+        list-style-type: disc; - circulo padrão
+        list-style-type: circle; - circulo só com a parte de fora
+        list-style-type: square; - quadrado
+
+Os três elementos masi comuns da lista ordenada são:
+
+        list-style-type: upper-roman; - números romano
+        list-style-type: lower-roman; - números romanos em minúculo
+        list-style-type: lower-alpha; - ordem alfabetica
+
+
+
+*/
+
+/* Tirar o ponto/número da lista */
+.L1 {
+    list-style-type: none;
+}
+
+.L2 {
+    list-style-type: none;
+}
+
+/* Colocando uma imagen no lugar do marcador */
+
+.L3 {
+    list-style-image: url('sqpurple.gif')
+}
+
+/* Bordas */
+
+li {
+    border: 1px solid blueviolet;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+ul {
+    list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}

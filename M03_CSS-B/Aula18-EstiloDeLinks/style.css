@@ -1,5 +1,78 @@
 /* w3schools - https://www.w3schools.com/css/css_link.asp  */
 
-.link{
+/* 
+
+** Os links podem ser estilizados com qualquer propriedade CSS (por exemplo, , , etc.).colorfont-familybackground
+
+** Além disso, os links podem ser estilizados de forma diferente, dependendo do estado em que estão.
+
+        Os quatro estados links são:
+
+        a:link - um elo normal e não visitado (padrão)
+        a:visited - um link que o usuário visitou
+        a:hover - um link quando o usuário mouses sobre ele
+        a:active - um link no momento em que é clicado
+
+*/
+
+/* Sem o sublinhado */
+.l1 {
     text-decoration: none;
 }
+
+.l2 {
+    text-decoration: none;
+    color: brown;
+    cursor: crosshair;
+    background: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.l3 {
+    text-decoration: none;
+    color: brown;
+    cursor: alias;
+    /* background: blue; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #bc2035;
+}
+
+.l4 {
+    text-decoration: none;
+    color: #bc2035;
+    cursor: e-resize;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #bc2035;
+}
+
+.l4:visited {
+    color: pink;
+}
+
+.l4:hover {
+    color: white;
+    background-color: blue;
+}
+
+.l5 {
+    text-decoration: none;
+    color: #bc2035;
+    cursor: crosshair;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #bc2035;
+}
+
+.l5:active {
+    background-color: rebeccapurple;
+    color: aqua;
+}
+
