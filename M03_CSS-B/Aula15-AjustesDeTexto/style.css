@@ -1,0 +1,71 @@
+p {
+    color: red;
+    text-indent: 15px;
+    text-shadow: 1px 1px 1px #bbb; ;
+}
+
+/* 
+
+** Alinhamento do texto: >> text-align: (justify, right, left center)
+
+** text-transform: -> Edita a forma da letra
+    
+    |uppercase = todo texto em caixa alta;
+    |lowercase =  todo texto em minúsculo;
+    |capitalize = todas as 1° letras estão em maiúsculo 
+
+** text-indent: N°px -> cria um afastamento no início do parágrafo
+
+** text-decoration: -> "Decoração do texto"
+
+    |underline = sublinhado
+    |overline = linha superior 
+    |line-through = risca o parágrafo
+    
+        OBS: pode ser juntados:
+        
+            exp:   text-decoration: line-through overline;
+
+    |none = retira a decoraçõ de texto do
+    
+        OBS: pode ser udaso pra tirar o padrão de decoração com por exemplo: <a>
+
+** letter-spacing: N°px -> distância entre as letras
+
+        OBS: Padrão é o zero
+        OBS: Pode ser positiva ou negativa
+
+** word-spacing: N°px -> distância entre pavras
+
+** line-height: N°px -> altura entre as linha
+
+        N° fixo:
+        p {                   
+            line-height: 15px;
+        }
+
+        ou 
+
+        Porcentagem referente a fonte
+        p {                   
+            line-height: 300%;
+        }
+
+        ou
+
+        Multiplicador referente a fonte
+        p {                   
+            line-height: 3;
+        }
+        
+** text-shadow: -> Adiciona uma sombra ao texto
+        
+        p {
+            text-shadow: 20px 20px 1px black; ;
+        }
+
+        1°) Valor do deslocamento para Direita
+        2°) Deslocamento para Baixo
+        3°) Raio de desfoque
+        4°)Cor da Sombra
+*/

@@ -1,0 +1,58 @@
+p {
+
+    font-family: Helvetica, arial, sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.var {
+    font-family: times, arial, sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/* 
+
+** Existem 3 famílias de fontes: 
+    
+        1°) Com serifa (pequeno traço que está presente no fim das hastes das letras);
+
+        2°) Sem serifa;
+
+        3°) Monospace (palavras com a mesma quantidade de letras vão ter o mesmo tamanho - mesmo espaço horizontal);
+
+        
+** font-family: pode conter varios valores na sua propeiedade. Para caso navegador não suporte a fonte ele terá a fonte seguinte para usar
+
+        p {
+            font-family: arial, "Comic Sans MS", "Helvetica Neue", Helvetica, 
+        }
+
+            Obs.:Fontes com mais de um nome (espaço em brando) precisa por aspas na sua declaração:
+
+                Ex.: "Time New Rome"
+
+
+** font-style: normal ou italic --> permite deixar a fonte em itálico
+
+
+** font-size: N°px --> tamanho da fonte
+
+
+** font-weight: bold ou (100 ~ 900) --> Permite usar o negrito
+
+            Obs.: Na numerção o caminha é sempre de 100 em 100;
+
+            Obs.: o padrão é 400, mais que isso fica mias forte menos mais fraco;
+
+            Obs.: Pode variar entre as famílias de fontes;
+
+
+** font-variant: small-caps --> permite que todas as letras fiquem maiúsculas porém respeitando a proporção original existentes entre minúsculas e maiúsculas.
+
+
+*/

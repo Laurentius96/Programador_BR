@@ -1,0 +1,26 @@
+#borda {
+    margin: 5px;
+    padding: 5px;
+    color: pink;
+    height: 16px;
+    background-color: red;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+#quadrado {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 5px solid blue;
+    border-radius: 50%;
+}
+
+#conteudo {
+    color:pink;
+    margin: 5px;
+    padding: 5px;
+}
+

@@ -1,48 +1,102 @@
-#cm {
-    background-color: blue;
-    width: 1cm;
-    height: 1cm;
-}
-
-#mm {
+.container {
+    width: 50vmin;
     background-color: red;
-    width: 1mm;
-    height: 1mm;
 }
 
-#in {
+.inside {
+    width: 90%;
     background-color: blue;
-    width: 1in;
-    height: 1in;
-}
 
-#px {
-    background-color: red;
-    width: 10px;
-    height: 10px;
-}
-
-#pt {
-    background-color: blue;
-    width: 10pt;
-    height: 10pt;
-}
-
-#pc {
-    background-color: red;
-    width: 1pc;
-    height: 1pc;
 }
 
 /* 
+Unidades de Referências => Mais usados (px, rem, em, %)
+
+em = referência ao tamanho da fonte do elemento;
+rem = referência ao tamanho da fonte do elemento raiz (html); 
+
+vw = referente a largura da janela de exibição, onde: 1vw é referente a 1% da largura da janela;
+
+vh = referente ao tamanho da altura da janela de exibição, onde 1vh é referente a 1% da altura da janela;
+
+vmin = referente ao menor valor atual da janela (altura ou largura) sempre se adaptando
+
+vmax = referente ao maior valor atual da janela (altura ou largura) sempre se adaptando
+
+% = valor referente ao valor do elemento pai. O body será a maior referência externa caso usado o % e o elemento não estiver dentro de nenhum elemento.  
+
+______
+OBS.01: Tamanho padrão do texto é de 16px
+_______
+OBS.02: Com o "em" --> Como a <div> inside está dentro do container ela vai herdar o tamanho de fonte do "pai dela"
+
+         .container {
+            font-size: 64px;                
+
+        }
+
+        .inside {
+            font-size: 2em;
+                
+        }
+
+______
+OBS.03: Se o fossem 2em o tamanho da fonte inside seria de 40px
+______
+OBS.04: um segundo "em" se utilizado com width, olhar exemplo abaixo:
+
+        .inside {
+            font-size: 2em;
+            width: 2em;
+            background-color: blue;
+        }
+
+        No exemplo acima esse 2° "em" irá representar o dobro do 1° "em" 
+______
+OBS.05: Com o "rem" --> No exemplo abaixo ele representa o 64px
+
+        html {
+            font-size: 32px;
+        }
+
+        .container {
+            font-size: 64px;
+        }
+
+        .inside {
+            font-size: 2rem; 
+        }
+
+______
+OBS.06: Para o vw ou vh - Abaixo os 50vw irá ter o tamanho máximo de 50% da largura da janela . Se fosse com vh, se mudassemos a altura ele passaria a sovre a alteração
+
+        .container {
+            width: 50vw;
+            background-color: red;
+        }
+
+        .inside {
+            width: 25vw;
+            background-color: blue;
+
+        }
+
+
+*/
+
+/*================================================================ */
+
+/* 
+Unidades Fixas
+
 Unidades de medidas fixas são propriedades CSS que podem assumir valores de "comprimento". Comprimento é um número seguido por uma unidade de medida, tais como 10px, 2em, etc. podem ser editadas com id, class. sendo:
 
-cm= centimetros
-mm= milimetros
-in= polegadas (1in = 96px = 2.54cm)
-px= pixels (1px = 1/96th de 1in) pode variar de acordo com a tela
-pt= pontos (1pt = 1/72 de 1in)
-pc= picas (1pc = 12 pt)
+cm = centimetros
+mm = milimetros
+in = polegadas (1in = 96px = 2.54cm)
+px = pixels (1px = 1/96th de 1in) pode variar de acordo com a tela
+pt = pontos (1pt = 1/72 de 1in)
+pc = picas (1pc = 12 pt)
 
 As unidades de medidas fixas são expressas exatamente com o tamanho selecionado.
 *o que pode afetar a reprodução do site em telas de resolução diferentes.

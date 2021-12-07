@@ -1,0 +1,15 @@
+
+/* w3schools - https://www.w3schools.com/css/css_font_google.asp  */
+/* Procure por emparelhar as fontes - https://www.w3schools.com/css/css_font_pairings.asp  */
+
+/* 
+Pegando fontes do Google:
+1°) Usando o link: https://fonts.google.com/ ;
+2°) Escolha sua fonte;
+3°) Ao clicar na sua fonte vá em (+ Select this Style), onde irá abrir Selected Family;
+4°) Copie o <link> 
+5°) Cole no <head> do projeto
+6°) Cole o "CSS rules to specify families" (font-family)
+
+*/
+
