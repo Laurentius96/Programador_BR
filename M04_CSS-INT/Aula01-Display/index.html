@@ -1,0 +1,97 @@
+<!-- Use CTRL '!' para criar a estrutura básica inicial-->
+<!-- <!DOCTYPE html> respresenta a versão do HTML5  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- <head></head> tudo que configura a página e não vai aparecer diretemente  -->
+  <head>
+    <!-- Codificação para mostra qual codificação que o arquivo atual foi gravado/está usadando. Usando atributo: charset="UTF-8" -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.
+    0"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Títula da aba do navegador -->
+    <title>M04-Aula 01: Display</title>
+
+    <style type="text/css">
+      body {
+        font-size: 15px;
+      }
+    </style>
+
+    <!-- <Display https://www.w3schools.com/cssref/pr_class_display.asp  -->
+
+        <!-- Display Block: 
+          Nomarmente ele vai do início ao fim da página (elemento comporta toda linha) e   
+          Quando finalizado o próximo coteúdo vai para a próxima linha
+          O seu elemento pode ter a largura e altura modificada
+          
+          NUNCA USAR DENTRO DE UM PARÁGRAFO (quebra o fluxo do parágrafo)
+        -->
+        
+        <!-- Não podemos ter uma <DIV> ou <P> dentro de um parágrafo <P>  para não eter quebra do fluxo do parágrafo-->
+
+
+        <!-- Display: Inline
+          Não é possivel alterar a largura e altura 
+        -->
+      
+        <!-- Display: Inline Block
+          Possui as mesmas caracteristicas do displau Inline mas permite modificação da altura e lagura
+          O próximo elemento continua na mesma linha.
+        -->
+
+        <!-- Display: none 
+          Faz que um elemento nunca estivesse mostrado na tela, suas alteraçãoes são "desligadas"
+        -->
+
+
+
+  </head>
+
+  <body>
+    
+    <div style="background-color: blue; color: white;">
+      <div>Está é uma DIV normal</div>
+      <div>
+        E aqui a histório<div style="background-color: red; width: 500px; height: 50px">DIV de dentro</div>
+        continua
+      </div>
+    </div>
+
+    <div>
+      <p style="margin: 0px;">Este é um parágrafo normal</p>
+      <p style="margin: 0;">E aqui é a história continua</p>
+    </div>
+
+    <p>
+      Aqui eu tenho o inicio de um parágrafo<span style="background-color: green; width: 500px" > um SPAN no meio </span> E o fim do parágrafo.
+    </p>
+
+    <p>
+      Aqui eu tenho o inicio de um parágrafo<span style="background-color: green; width: 500px; display: inline-block" > um SPAN no meio </span> E o fim do parágrafo.
+    </p>
+
+
+    <p style="background-color: pink">
+      Aqui eu tenho o inicio de um parágrafo<div style="background-color: yellow"> uma DIV no meio </div> E o fim do parágrafo.
+    </p>
+
+    <p>
+      Aqui eu tenho o inicio de um parágrafo <img style="width: 500px; display: inline-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUQthuOvN6p8y-5sTQX1UoSCEuU_mu4jWbjs1SNevEpfZZIuMKNkvf4Vf0e2l41Nj8bI&usqp=CAU"> E o fim do parágrafo.
+    </p>
+
+    <p>
+      Aqui eu tenho o inicio de um parágrafo <img style="width: 500px; display: none" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUQthuOvN6p8y-5sTQX1UoSCEuU_mu4jWbjs1SNevEpfZZIuMKNkvf4Vf0e2l41Nj8bI&usqp=CAU"> E o fim do parágrafo.
+    </p>
+
+    <!-- visibility: hidden esconde o item, mas sem alterar a formatação -->
+    <p>
+      Aqui eu tenho o inicio de um parágrafo <img style="width: 500px; visibility: hidden" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUQthuOvN6p8y-5sTQX1UoSCEuU_mu4jWbjs1SNevEpfZZIuMKNkvf4Vf0e2l41Nj8bI&usqp=CAU"> E o fim do parágrafo.
+    </p>
+
+  </body>
+</html>
