@@ -1,0 +1,169 @@
+<!-- Use CTRL '!' para criar a estrutura básica inicial-->
+<!-- <!DOCTYPE html> respresenta a versão do HTML5  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- <head></head> tudo que configura a página e não vai aparecer diretemente  -->
+  <head>
+    <!-- Codificação para mostra qual codificação que o arquivo atual foi gravado/está usadando. Usando atributo: charset="UTF-8" -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.
+    0"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Títula da aba do navegador -->
+    <title>M04-Aula 01: Display</title>
+
+    <!-- https://www.w3schools.com/cssref/pr_pos_overflow.asp -->
+
+    <!-- Overflow (Transbordar) -->
+    <!-- 
+      A propriedade especifica o que deve acontecer se o conteúdo transbordar a caixa de um elemento.
+
+      Esta propriedade especifica se deve cortar conteúdo ou adicionar barras de rolagem quando o conteúdo de um elemento é muito grande para caber em uma área especificada.
+      
+      Nota: A propriedade só funciona para elementos de bloco com uma altura especificada.
+
+     -->
+
+    <!-- overflow: visible
+    
+      Mostra o conteúdo mesmo que esse esteja ultrapasssando o elemento. 
+
+    -->
+
+    <!-- overflow: hidden
+    
+      Oculta o conteúdo que esse esteja ultrapasssando o elemento .
+
+    -->
+
+    <!-- overflow: scroll
+    
+      O conteúdo ultrapassado é oculto, mas é criado duas barras de rolagem, mesmo que esse conteúdo em uma das dimenções não esteja ultrapassada ele irá criar a barra de rolagem mesmo assim.
+
+      OBS.: Pode ser usado o 
+
+      overflow-y: scroll para color uma barra de rolagem na direção Y
+
+    -->
+
+    <!-- overflow: auto
+    
+      O conteúdo ultrapassado é oculto, mas é criado duas barras de rolagem, em somente na dimenção que o elemento for "estourado".
+
+    -->
+
+    <style type="text/css">
+      body {
+        font-size: 15px;
+      }
+      #container {
+        color: yellow;
+        background-color: blue;
+        width: 300px;
+        height: 100px;
+
+        overflow: auto;
+      }
+      #container2 {
+        color: yellow;
+        background-color: blue;
+        width: 500px;
+        height: 500px;
+
+        overflow: auto;
+      }
+
+      div.ex1 {
+        background-color: lightblue;
+        width: 110px;
+        height: 110px;
+        overflow: scroll;
+      }
+
+      div.ex2 {
+        background-color: lightblue;
+        width: 110px;
+        height: 110px;
+        overflow: hidden;
+      }
+
+      div.ex3 {
+        background-color: lightblue;
+        width: 110px;
+        height: 110px;
+        overflow: auto;
+      }
+
+      div.ex4 {
+        background-color: lightblue;
+        width: 110px;
+        height: 110px;
+        overflow: visible;
+        margin-bottom: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The overflow Property</h1>
+
+    <p>
+      A propriedade overflow especifica se o conteúdo deve ser recortado ou
+      adicionado barras de rolagem quando o conteúdo de um elemento é muito
+      grande para caber em um determinado área.
+    </p>
+    <p>
+      The overflow property specifies whether to clip content or to add
+      scrollbars when an element's content is too big to fit in a specified
+      area.
+    </p>
+
+    <h2>overflow: visible (default):</h2>
+    <div class="ex4">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+
+    <h2>overflow: scroll:</h2>
+    <div class="ex1">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+
+    <h2>overflow: hidden:</h2>
+    <div class="ex2">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+
+    <h2>overflow: auto:</h2>
+    <div class="ex3">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+    <br />
+
+    <div id="container">
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto texto texto
+      texto texto texto texto texto texto texto texto texto texto
+    </div>
+    <br />
+    <div id="container2">
+      <img
+        src="https://blog.emania.com.br/wp-content/uploads/2015/09/papers.co-ma57-rainy-city-nature-22-wallpaper.jpg"
+      />
+    </div>
+  </body>
+</html>
