@@ -1,0 +1,88 @@
+<!-- Use CTRL '!' para criar a estrutura básica inicial-->
+<!-- <!DOCTYPE html> respresenta a versão do HTML5  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- <head></head> tudo que configura a página e não vai aparecer diretemente  -->
+  <head>
+    <!-- Codificação para mostra qual codificação que o arquivo atual foi gravado/está usadando. Usando atributo: charset="UTF-8" -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.
+    0"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Títula da aba do navegador -->
+    <title>M04-Aula 05: Static e Relative</title>
+
+    <!-- https://www.w3schools.com/cssref/pr_class_position.asp -->
+
+    <!-- Position: 
+      
+      A propriedade especifica o tipo de método de posicionamento utilizado para um elemento (estático, relativo, absoluto, fixo ou pegajoso(sticky))
+    
+    -->
+
+    <!-- Position: static 
+    
+      Os elementos são renderizados em ordem, conforme aparecem no fluxo do documento.
+    
+    -->
+
+    <!-- Position: relative
+    
+      O elemento é posicionado em relação à sua posição normal.
+      Permite o uso de propriedades como left, right, top, bottom.
+    
+      OBS.: Lembra a MARGIN, MAS NÃO É IGUAL, pois, a margin é como se colocasse um "objeto" no espaçamento que é fornecido e ele se afasta desse "objeto" forçando os elementos também. Já o relative é referente a sua própria posição natural.
+    
+    -->
+
+    <!-- OBSERVAÇÃO:
+
+      Do jeito que está, a posição relativa é muito frágil, pois, se for alteradada a ordem das TAGs ou dados do elemento pais os "objetos" vão ser alterados de maneira não proposital ou automática. 
+    
+    
+    -->
+
+    <style type="text/css">
+      .quadrado {
+        width: 100px;
+        height: 100px;
+      }
+      .quadro {
+        width: 500px;
+        height: 400px;
+        border: 1px solid gray;
+      }
+      .QR {
+        background-color: red;
+        position: relative;
+        bottom: 30px;
+      }
+      .QB {
+        background-color: blue;
+        position: relative;
+        left: 20px;
+        top: 20px;
+      }
+      .QG {
+        background-color: green;
+      }
+      .QP {
+        background-color: pink;
+        position: relative;
+        left: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quadro">
+      <div class="quadrado QR"></div>
+      <div class="quadrado QB"></div>
+      <div class="quadrado QG"></div>
+      <div class="quadrado QP"></div>
+    </div>
+  </body>
+</html>
