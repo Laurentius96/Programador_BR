@@ -14,7 +14,7 @@
     />
     <link href="style.css" rel="stylesheet" />
     <!-- Títula da aba do navegador -->
-    <title>M04-Aula 06: Absolute</title>
+    <title>M04-Aula 08: Sticky</title>
 
     <!-- https://www.w3schools.com/cssref/pr_class_position.asp -->
 
@@ -40,7 +40,8 @@
       OBSERVAÇÃO:
 
       A posição relativa é muito frágil, pois, se for alteradada a ordem das TAGs ou dados do elemento pais os "objetos" vão ser alterados de maneira não proposital ou automática. 
-    
+      
+
     -->
 
     <!-- Position: absolute
@@ -49,11 +50,36 @@
 
       OBSERVAÇÃO: 
 
-      sua posição vai está ligado ao seu "pai" desde que o position do "pai" ou "acendente" (avô...) seja diferente de static. Caso contrario o objeto que tiver com posicionamento absolute e seu pai não for diferente de static ele vai obedecer o posicionamento no "body".
+      Sua posição vai está ligado ao seu "pai" desde que o position do "pai" ou "acendente" (avô...) seja diferente de static. Caso contrario o objeto que tiver com posicionamento absolute e seu pai não for diferente de static ele vai obedecer o posicionamento no "body".
       
     
     -->
-   
+
+    <!-- Position: fixed
+
+      Lembra muito o absoltulo, mas...
+
+      Mantem o elemento de forma fixa em relação a viewport 
+
+      USADO:  
+      
+      Quando você quer que um item (botão, barra de navegação...) acompanhe o usuário.
+    
+    -->
+
+    <!-- Position: sticky
+
+      O elemento é posicionado com base na posição de rolagem do usuário.
+      
+      Um elemento aderente alterna entre relativo e fixo, dependendo da posição de rolagem. 
+      
+      Ele é posicionado em relação até que uma determinada posição de deslocamento seja encontrada na janela de exibição - então, ele "se fixa" no lugar (como a posição: fixa).      
+       
+      USADO: 
+
+      Quando você quer deixar um aviso para o usuário
+
+    -->
 
     <style type="text/css">
       .quadrado {
@@ -62,17 +88,17 @@
       }
       .quadro {
         width: 500px;
-        height: 400px;
+        height: 4000px;
         border: 1px solid gray;
-        
       }
       .QR {
         background-color: red;
+        width: 100%;
+        position: sticky;
+        top: 0px;
       }
       .QB {
         background-color: blue;
-        position: fixed;
-
       }
       .QG {
         background-color: green;
@@ -80,8 +106,8 @@
     </style>
   </head>
   <body>
+    <div class="quadrado QR"></div>
     <div class="quadro">
-      <div class="quadrado QR"></div>
       <div class="quadrado QB"></div>
       <div class="quadrado QG"></div>
     </div>

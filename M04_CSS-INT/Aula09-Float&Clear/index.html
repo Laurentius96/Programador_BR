@@ -1,0 +1,112 @@
+<!-- Use CTRL '!' para criar a estrutura básica inicial-->
+<!-- <!DOCTYPE html> respresenta a versão do HTML5  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- <head></head> tudo que configura a página e não vai aparecer diretemente  -->
+  <head>
+    <!-- Codificação para mostra qual codificação que o arquivo atual foi gravado/está usadando. Usando atributo: charset="UTF-8" -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.
+    0"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Títula da aba do navegador -->
+    <title>M04-Aula 09: Float e Clear</title>
+
+    <!-- https://www.w3schools.com/cssref/pr_class_float.asp -->
+
+    <!-- Float: 
+    
+     Propriedade especifica se um elemento deve flutuar para a esquerda, direita ou não do elemento especificado com a propriedade FLOAT.
+    
+     NOTA 1: Elementos absolutamente posicionados ignoram a propriedade!
+    
+     NOTA 2: Elementos próximos a um elemento flutuante fluirão ao seu redor. Para evitar isso, use a propriedade "clearfix hack"
+
+     Valores da propriedade: none, left, right, initial, inherit
+    -->
+
+    <!-- RESUMO:  
+      
+      O Display: 
+      
+      É o que definirá o comportamento padrão de certo elemento.
+      Dá uma olhada aqui:
+      https://developer.mozilla.org/pt-BR/docs/Web/CSS/display
+
+      O Overflow:
+      
+      Vai definir se o elemento vai ser cortado, exibido com aquelas barrinhas de rolagem ou vazar de seus limites, além de servir com "hacking" para identificar um elemento que está flutuando como elemento.
+      Dá uma olhada aqui:
+      https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow
+
+      O Float:
+      
+      Vai tirar o comportamento padrão do elemento e vai fazer com que ele flutue de um dos lados de seu contexto.
+      Dá uma olhada aqui:
+      https://developer.mozilla.org/pt-BR/docs/Web/CSS/float
+
+
+    -->
+
+    <style type="text/css">
+      body {
+        font-size: 1.2rem;
+      }
+
+      p {
+        clear: none;
+      }
+
+      div {
+        border: 1px solid black;
+        padding: 10px;
+        background-color: gray;
+        overflow: auto;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+      }
+      img {
+        float: left;
+      }
+
+      li {
+        float: right;
+        padding: 10px;
+        background-color: gray;
+        margin: 5px;
+      }
+
+      ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Home</li>
+      <li>Cursos</li>
+      <li>Contato</li>
+    </ul>
+
+    <div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUQthuOvN6p8y-5sTQX1UoSCEuU_mu4jWbjs1SNevEpfZZIuMKNkvf4Vf0e2l41Nj8bI&usqp=CAU"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUQthuOvN6p8y-5sTQX1UoSCEuU_mu4jWbjs1SNevEpfZZIuMKNkvf4Vf0e2l41Nj8bI&usqp=CAU"
+      />
+      <p>
+        Lorem Ipsum é simplesmente uma simulação de texto da indústria
+        tipográfica e Lorem Ipsum é simplesmente uma simulação de texto da
+        indústria tipográfica e Lorem Ipsum é simplesmente uma simulação de
+        texto da indústria tipográfica e Lorem Ipsum é simplesmente uma
+        simulação de texto
+      </p>
+    </div>
+  </body>
+</html>
