@@ -18,7 +18,7 @@
 
     <link href="style.css" rel="stylesheet" />
     <!-- Títula da aba do navegador -->
-    <title>M04-Aula 11: Viewport</title>
+    <title>M04-Aula 13: Media Queries</title>
 
     <style type="text/css">
       body {
@@ -27,20 +27,50 @@
         padding: 0px;
       }
 
-      img {
-        width: 375px;
+      .header {
+        margin: auto;
+        width: 80%;
+        height: 100px;
+        background-color: gray;
+      }
+      .content {
+        margin: auto;
+        width: 70%;
+        height: 70%;
+        background-color: blue;
+      }
+
+      .header2 {
+        position: relative;
+        margin: auto;
+        width: 80%;
+        height: 100px;
+        background-color: orange;
+      }
+      .content2 {
+        position: absolute;
+        
+        width: 70%;
+        height: 70%;
+        background-color: red;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        font-size: 6vw;
       }
     </style>
   </head>
   <body>
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUQthuOvN6p8y-5sTQX1UoSCEuU_mu4jWbjs1SNevEpfZZIuMKNkvf4Vf0e2l41Nj8bI&usqp=CAU"
-    />
-    <p>
-      Lorem ipsum dolor sit amet, consectet lorem ipsum dolor Lorem ipsum dolor
-      sit amet Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum
-      dolor lorem ipsum dolor lorem ipsum dolor lorem lorem ipsum dolor lorem
-      ipsum dolor lorem lorem ipsum dolor lorem ipsum dolor lorem
-    </p>
+    <div class="header">
+      <div class="content"></div>
+    </div>
+
+    <div class="header2">
+      <div class="content2">Hello World!</div>
+    </div>
   </body>
 </html>
